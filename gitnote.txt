@@ -1,3 +1,4 @@
+代码：git config --global core.crlf true
 创建空目录：mkdir learngit
 更改目录：cd
 显示当前目录：pwd
