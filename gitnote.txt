@@ -1,0 +1,28 @@
+创建空目录：mkdir learngit
+更改目录：cd
+显示当前目录：pwd
+把这个库变成git可以管理的：git init
+编辑文件：vi
+查看文件：cat
+查看目录文件：ls/dir
+提交缓存区：git add 
+提交库：git commit –m “描述”
+查看工作区：git status
+查看修改：git diff；git diff HEAD -- readme.txt(工作区与版本库区别)
+历史记录：git log（提交）；git reflog（命令）；git log –pretty=oneline（简介）；
+分支合并图：git log --graph –-pretty=oneline –abbrev-commit
+回退：git reset –hard HEAD^（上版本）；git reset –hard ID（回退ID版本）；
+撤销：git checkout – readme.txt撤回工作区修改；git reset HEAD readme.txt撤回暂存区到工作区
+删除：rm readme.txt；add+commit
+添加远程库：git remote；git push –u origin master；git remote -v（看库）；git remote rm origin（删除库）
+克隆：git clone+cd
+克隆后开发dev：git switch –c dev origin/dev
+抓取最新dev：git pull
+建立远程库分支连接：git branch –set-upstream-to=origin/dev dev
+创建分支：git switch –c dev；git merge dev（main快速合并）；git merge –no-ff –m “描述” dev（普通合并）；git branch –d dev（删除 -D）；git branch（查看）
+储存工作区：git stash；git stash list；git stash apply stash@{}；git stash drop；git stash pop
+Dev上提交bug：git cherry-pick id（bug commit id）
+整理分支历史成线：git rebase
+标签：git tag；git tag v1.0 id；git tag –a v0.1 –m “描述” id；git show v1.0；git tag –d v0.1；git push origin –tags；git push origin v0.9；git push origin :refs/tags/0.9（远程库删除）；
+
+
